@@ -3,11 +3,10 @@ import 'package:flutter/material.dart';
 class inputSuhu extends StatelessWidget {
   const inputSuhu({
     Key? key,
-    required this.etInput, required this.onPressed,
+    required this.etInput
   }) : super(key: key);
 
   final TextEditingController etInput;
-  final Function onPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +17,6 @@ class inputSuhu extends StatelessWidget {
         labelText: 'Celcius',
         hintText: 'Enter the temperature in celcius'
       ),
-      onChanged: (value){
-        onPressed();
-      }
     );
   }
 }

@@ -35,7 +35,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
   TextEditingController etInput = TextEditingController();
   List<String> listSatuanSuhu = ["Kelvin", "Reamur", "Fahrenheit"];
   String selectedDropDown = "Kelvin";
@@ -78,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         margin: EdgeInsets.all(8),
         child: Column(
           children: [
-            inputSuhu(etInput: etInput, onPressed: konversiSuhu),
+            inputSuhu(etInput: etInput),
             SizedBox(height: 8),
             targetPerhitungan(
               selectedDropDown: selectedDropDown, 
